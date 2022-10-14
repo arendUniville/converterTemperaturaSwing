@@ -6,20 +6,7 @@ import java.awt.event.ActionListener;
 public class LoginFrame extends JFrame {
 
     private JTextField tempCelsius;
-
-
-    private JTextField senhaField;
-
-
     private JLabel testeLabel;
-
-    private double celsius = 2.5;
-    private double fahrenheit = 5.0;
-
-    private double resultadoKelvin;
-
-
-
 
 
     public LoginFrame(){
@@ -40,11 +27,6 @@ public class LoginFrame extends JFrame {
         tempCelsius = new JTextField();
         tempCelsius.setColumns(15);
         tempCelsius.setToolTipText("Informe a temperatura");
-
-        senhaField = new JTextField();
-        senhaField.setColumns(15);
-        senhaField.setToolTipText("Informe a senha");
-
 
 
         JButton botaoKelvin = new JButton("Kelvin");
@@ -84,7 +66,6 @@ public class LoginFrame extends JFrame {
                  .createCompoundBorder(BorderFactory.createEmptyBorder(20,20,20,20)
                  ,BorderFactory.createTitledBorder("Converter Temperatura")));
 
-        //Adicina o painel no JFrame
         add(painel);
     }
 
